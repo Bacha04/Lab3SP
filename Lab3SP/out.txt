@@ -1,0 +1,79 @@
+num1 - Identifier
+= - Operator
+10 - Numeric Literal
+num2 - Identifier
+= - Operator
+14 - Numeric Literal
+num3 - Identifier
+= - Operator
+12 - Numeric Literal
+num1 - Identifier
+= - Operator
+float - Identifier
+( - Punctuation
+input - Identifier
+( - Punctuation
+"Enter first number: " - String Literal
+) - Punctuation
+) - Punctuation
+num2 - Identifier
+= - Operator
+float - Identifier
+( - Punctuation
+input - Identifier
+( - Punctuation
+"Enter second number: " - String Literal
+) - Punctuation
+) - Punctuation
+num3 - Identifier
+= - Operator
+float - Identifier
+( - Punctuation
+input - Identifier
+( - Punctuation
+"Enter third number: " - String Literal
+) - Punctuation
+) - Punctuation
+if - Keyword
+( - Punctuation
+num1 - Identifier
+>= - Operator
+num2 - Identifier
+) - Punctuation
+and - Identifier
+( - Punctuation
+num1 - Identifier
+>= - Operator
+num3 - Identifier
+) - Punctuation
+: - Punctuation
+largest - Identifier
+= - Operator
+num1 - Identifier
+elif - Identifier
+( - Punctuation
+num2 - Identifier
+>= - Operator
+num1 - Identifier
+) - Punctuation
+and - Identifier
+( - Punctuation
+num2 - Identifier
+>= - Operator
+num3 - Identifier
+) - Punctuation
+: - Punctuation
+largest - Identifier
+= - Operator
+num2 - Identifier
+else - Keyword
+: - Punctuation
+largest - Identifier
+= - Operator
+num3 - Identifier
+print - Identifier
+( - Punctuation
+"The largest number is" - String Literal
+, - Punctuation
+largest - Identifier
+) - Punctuation

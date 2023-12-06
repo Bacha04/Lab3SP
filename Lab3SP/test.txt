@@ -1,0 +1,95 @@
+// PHP variables
+$name = "John Doe";
+$age = 30;
+$colors = array("red", "green", "blue");
+$agesq = $age ** 2;
+$test = 31.6;
+$t = 0x1F;
+$t .= $test
+$q * $b
+#testcommentunix
+// PHP functions
+function greet($name) {
+    return "Hello, $name!";
+}
+/* test comment multiline
+3232rfefdsfds
+*/
+// PHP conditionals and loops
+if ($age >= 18) {
+    echo greet($name);
+} else {
+    echo "You are not of legal age.";
+}
+
+foreach ($colors as $color) {
+    echo "Color: $color<br>";
+}
+
+// PHP arrays
+$person = array("name" => "Jane Smith", "age" => 25, "city" => "New York");
+
+// PHP classes and objects
+class Car {
+    public $make;
+    public $model;
+
+    function __construct($make, $model) {
+        $this->$make = $make;
+        $this->$model = $model;
+    }
+
+    function describe() {
+        echo "This is a $this->make $this->model.<br>";
+    }
+}
+
+$myCar = new Car("Toyota", "Camry");
+$myCar->describe();
+
+// PHP file handling
+$filename = "sample.txt";
+$file = fopen($filename, "w");
+if ($file) {
+    fwrite($file, "This is a sample text file.");
+    fclose($file);
+}
+
+// PHP database connection (simplified)
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "mydb";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// PHP error handling
+try {
+    // Code that may throw an exception
+    throw new Exception("This is an example exception.");
+} catch (Exception $e) {
+    echo "Caught an exception: " . $e->getMessage();
+}
+
+
+// PHP sessions
+session_start();
+$_SESSION['user_id'] = 123;
+
+// PHP cookies
+setcookie("user", "John", time() + 3600, "/");
+
+// PHP regular expressions
+$pattern = "/[0-9]+/";
+$string = "There are 123 apples and 456 oranges.";
+preg_match($pattern, $string, $matches);
+echo "Number: " . $matches[0];
+
+// PHP date and time functions
+$date = date("Y-m-d H:i:s");
+echo "Current date and time: $date";
+
+// More PHP features can be added as needed
